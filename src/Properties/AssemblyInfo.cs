@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExcelLibrary")]
+[assembly: AssemblyTitle("SheetSwiper")]
 [assembly: AssemblyDescription("http://code.google.com/p/excellibrary/")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExcelLibrary")]
-[assembly: AssemblyCopyright("Copyright ©  2009")]
-[assembly: AssemblyTrademark("ExcelLibrary")]
+[assembly: AssemblyProduct("SheetSwiper")]
+[assembly: AssemblyCopyright("Copyright ©  2009-2013")]
+[assembly: AssemblyTrademark("SheetSwiper")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -29,6 +29,6 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("0.3.0.0")]
-[assembly: AssemblyFileVersion("0.3.0.0")]
-[assembly: InternalsVisibleTo("ExcelLibrary.Test")]  
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+

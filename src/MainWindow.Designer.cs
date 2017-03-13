@@ -64,9 +64,9 @@ namespace SheetSwipe
             // 
             // _tabControl
             // 
-            this._tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._tabControl.Controls.Add(this._convertPage);
             this._tabControl.Controls.Add(this._reviewPage);
             this._tabControl.Location = new System.Drawing.Point(8, 9);
@@ -208,8 +208,8 @@ namespace SheetSwipe
             // 
             // _fontChooser
             // 
-            this._fontChooser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._fontChooser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._fontChooser.FormattingEnabled = true;
             this._fontChooser.Location = new System.Drawing.Point(49, 13);
             this._fontChooser.Name = "_fontChooser";
@@ -229,9 +229,9 @@ namespace SheetSwipe
             // 
             // _output
             // 
-            this._output.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._output.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._output.BackColor = System.Drawing.Color.White;
             this._output.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._output.Location = new System.Drawing.Point(6, 43);
@@ -255,9 +255,9 @@ namespace SheetSwipe
             this.Text = "Sheet Swiper";
             this.Deactivate += new System.EventHandler(this.MainWindow_Deactivate);
             this.Load += new System.EventHandler(this.OnLoad);
-            this.DragLeave += new System.EventHandler(this.OnDragLeave);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.OnDragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.OnDragEnter);
+            this.DragLeave += new System.EventHandler(this.OnDragLeave);
             this._tabControl.ResumeLayout(false);
             this._convertPage.ResumeLayout(false);
             this._convertPage.PerformLayout();

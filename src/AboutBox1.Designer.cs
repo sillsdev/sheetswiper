@@ -35,6 +35,7 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.labelVersion = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -93,7 +94,7 @@
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel4.Location = new System.Drawing.Point(51, 183);
+            this.linkLabel4.Location = new System.Drawing.Point(43, 236);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(122, 13);
             this.linkLabel4.TabIndex = 5;
@@ -112,8 +113,9 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Location = new System.Drawing.Point(195, 223);
+            this.button1.Location = new System.Drawing.Point(208, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -121,13 +123,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.LinkArea = new System.Windows.Forms.LinkArea(83, 104);
+            this.linkLabel5.Location = new System.Drawing.Point(46, 171);
+            this.linkLabel5.MaximumSize = new System.Drawing.Size(250, 0);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(249, 42);
+            this.linkLabel5.TabIndex = 8;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "The real work, the reading of the spreadsheet, is done via code from Liu JunFeng\'" +
+    "s Excel Reader project.";
+            this.linkLabel5.UseCompatibleTextRendering = true;
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            // 
             // AboutBox1
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button1;
-            this.ClientSize = new System.Drawing.Size(311, 268);
+            this.ClientSize = new System.Drawing.Size(324, 327);
+            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.linkLabel4);
@@ -160,6 +178,7 @@
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.Label labelVersion;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel5;
 
     }
 }

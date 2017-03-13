@@ -1,4 +1,0 @@
-glob:src/SheetSwipe.resharper
-glob:*.resharper
-glob:*.user
-glob:*.suo

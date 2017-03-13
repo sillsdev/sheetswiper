@@ -1,0 +1,12 @@
+output/
+src/_ReSharper*
+src/obj/
+src/_UpgradeReport_Files/
+src/UpgradeLog/
+*.suo
+*.resharper
+*.user
+*.ncrunchsolution
+
+
+src/_ReSharper.Caches/

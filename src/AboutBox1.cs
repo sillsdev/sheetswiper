@@ -12,8 +12,8 @@ namespace SheetSwiper
         public AboutBox1()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0} {0}", AssemblyTitle);
-            this.labelVersion.Text = String.Format("Version {0} {0}", AssemblyVersion);
+            this.Text = String.Format("About {0}", AssemblyTitle);
+            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
         }
 
         #region Assembly Attribute Accessors
@@ -98,7 +98,7 @@ namespace SheetSwiper
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"http://code.google.com/p/sheetswiper");
+            System.Diagnostics.Process.Start(@"http://projects.palaso.org/projects/sheetswiper/files");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -119,6 +119,11 @@ namespace SheetSwiper
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"http://code.google.com/p/excellibrary");
         }
     }
 }
