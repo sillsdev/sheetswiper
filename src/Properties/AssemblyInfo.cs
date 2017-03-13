@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SheetSwiper")]
-[assembly: AssemblyDescription("http://code.google.com/p/excellibrary/")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SheetSwiper")]
-[assembly: AssemblyCopyright("Copyright ©  2009-2013")]
+[assembly: AssemblyCopyright("Copyright ©  2009-2017")]
 [assembly: AssemblyTrademark("SheetSwiper")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("62d1de42-e648-4b7f-9734-b33add18da18")]
+[assembly: Guid("62d1de42-e648-4b7f-9734-b33add18d333")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,6 +29,6 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
 

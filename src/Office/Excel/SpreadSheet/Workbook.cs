@@ -18,25 +18,57 @@ namespace ExcelLibrary.SpreadSheet
         public List<Record> Records;
 
         /// <summary>
-        /// Open workbook from a file path.
+        /// Load workbook from a file path.
         /// </summary>
         /// <param name="file"></param>
-        public static Workbook Open(string file)
+        public static Workbook Load(string file)
         {
-            CompoundDocument doc = CompoundDocument.Read(file);
+            return Load(File.OpenRead(file));
+        }
+
+        /// <summary>
+        /// Load workbook from Stream.
+        /// </summary>
+        /// <param name="fileStream"></param>
+        /// <returns></returns>
+        public static Workbook Load(Stream stream)
+        {
+            CompoundDocument doc = CompoundDocument.Load(stream);
             if (doc == null) throw new Exception("Invalid Excel file");
             byte[] bookdata = doc.GetStreamData("Workbook");
             return WorkbookDecoder.Decode(new MemoryStream(bookdata));
         }
 
+        /// <summary>
+        /// Save workbook to a file.
+        /// </summary>
+        /// <param name="file"></param>
         public void Save(string file)
         {
-            CompoundDocument doc = CompoundDocument.Create(file);
-            MemoryStream stream = new MemoryStream();
-            WorkbookEncoder.Encode(this, stream);
-            doc.WriteStreamData(new string[] { "Workbook" }, stream.ToArray());
-            doc.Save();
-            doc.Close();
+            using (CompoundDocument doc = CompoundDocument.Create(file))
+            {
+                using (MemoryStream memStream = new MemoryStream())
+                {
+                    WorkbookEncoder.Encode(this, memStream);
+                    doc.WriteStreamData(new string[] { "Workbook" }, memStream.ToArray());
+                    doc.Save();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Save workbook to stream.
+        /// </summary>
+        /// <param name="stream"></param>
+        public void Save(Stream stream)
+        {
+            CompoundDocument doc = CompoundDocument.Create(stream);
+            using (MemoryStream memStream = new MemoryStream())
+            {
+                WorkbookEncoder.Encode(this, memStream);
+                doc.WriteStreamData(new string[] { "Workbook" }, memStream.ToArray());
+                doc.Save();
+            }
         }
 
         public List<byte[]> ExtractImages()
@@ -94,6 +126,15 @@ namespace ExcelLibrary.SpreadSheet
                 }
             }
             Records.RemoveAt(index);
+        }
+
+        public void SaveToStream(Stream stream)
+        {
+            CompoundDocument doc = CompoundDocument.CreateFromStream(stream);
+            MemoryStream mstream = new MemoryStream();
+            WorkbookEncoder.Encode(this, mstream);
+            doc.WriteStreamData(new string[] { "Workbook" }, mstream.ToArray());
+            doc.Save();
         }
     }
 }

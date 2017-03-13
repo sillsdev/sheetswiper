@@ -145,7 +145,7 @@ namespace SheetSwipe
                 StringBuilder builder = new StringBuilder();
         //        using (Stream fileStream = File.OpenRead(path))
                 {
-                    Workbook book = Workbook.Open(path);
+                    Workbook book = Workbook.Load(path);
                     Worksheet sheet = book.Worksheets[0];
                     if (!CheckForSfmMarkerHeader(sheet))
                     {

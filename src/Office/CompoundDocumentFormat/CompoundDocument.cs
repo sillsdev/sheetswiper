@@ -6,7 +6,7 @@ using QiHe.CodeLib;
 
 namespace ExcelLibrary.CompoundDocumentFormat
 {
-    public partial class CompoundDocument
+    public partial class CompoundDocument : IDisposable
     {
         internal FileHeader Header;
         internal int SectorSize;
@@ -33,7 +33,10 @@ namespace ExcelLibrary.CompoundDocumentFormat
         {
             this.FileStorage = stream;
             this.Reader = new BinaryReader(this.FileStorage);
-            this.Writer = new BinaryWriter(this.FileStorage, Encoding.Unicode);
+            if (stream.CanWrite)
+            {
+                this.Writer = new BinaryWriter(this.FileStorage, Encoding.Unicode);
+            }
 
             this.Header = header;
             this.SectorSize = (int)Math.Pow(2, Header.SectorSizeInPot);
@@ -49,6 +52,26 @@ namespace ExcelLibrary.CompoundDocumentFormat
         public static CompoundDocument Create(string file)
         {
             FileStream stream = File.Open(file, FileMode.Create, FileAccess.ReadWrite, FileShare.Read);
+            return Create(stream);
+        }
+
+        public static CompoundDocument Open(string file)
+        {
+            FileStream stream = File.Open(file, FileMode.Open, FileAccess.ReadWrite, FileShare.Read);
+
+            try
+            {
+                return Open(stream);
+            }
+            catch (Exception ex)
+            {
+                stream.Close();
+                throw ex;
+            }
+        }
+
+        public static CompoundDocument Create(Stream stream)
+        {
             CompoundDocument document = new CompoundDocument(stream, new CompoundFileHeader());
             document.WriteHeader();
             document.MasterSectorAllocation.AllocateSATSector();
@@ -56,9 +79,8 @@ namespace ExcelLibrary.CompoundDocumentFormat
             return document;
         }
 
-        public static CompoundDocument Open(string file)
+        public static CompoundDocument Open(Stream stream)
         {
-            FileStream stream = File.Open(file, FileMode.Open, FileAccess.ReadWrite, FileShare.Read);
             BinaryReader reader = new BinaryReader(stream);
             FileHeader header = ReadHeader(reader);
 
@@ -80,7 +102,35 @@ namespace ExcelLibrary.CompoundDocumentFormat
 
         public void Close()
         {
-            FileStorage.Close();
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        ~CompoundDocument()
+        {
+            Dispose(false);
+        }
+
+        bool disposed = false;
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed) { return; }
+
+            if (disposing)
+            {
+                if (FileStorage != null)
+                {
+                    FileStorage.Close();
+                    FileStorage = null;
+                }
+            }
+
+            disposed = true;
         }
 
         bool CheckHeader()
@@ -130,7 +180,7 @@ namespace ExcelLibrary.CompoundDocumentFormat
 
         internal int ReadInt32InSector(int secID, int position)
         {
-            int offset = GetSectorOffset(secID);
+            long offset = GetSectorOffset(secID);
             FileStorage.Position = offset + position;
             return Reader.ReadInt32();
         }
@@ -143,21 +193,21 @@ namespace ExcelLibrary.CompoundDocumentFormat
 
         internal void WriteInSector(int secID, int position, int integer)
         {
-            int offset = GetSectorOffset(secID);
+            long offset = GetSectorOffset(secID);
             FileStorage.Position = offset + position;
             Writer.Write(integer);
         }
 
         internal void WriteInSector(int secID, int position, int[] integers)
         {
-            int offset = GetSectorOffset(secID);
+            long offset = GetSectorOffset(secID);
             FileStorage.Position = offset + position;
             WriteArrayOfInt32(Writer, integers);
         }
 
         internal void WriteInSector(int secID, int position, byte[] data, int index, int count)
         {
-            int offset = GetSectorOffset(secID);
+            long offset = GetSectorOffset(secID);
             FileStorage.Position = offset + position;
             Writer.Write(data, index, count);
         }
@@ -214,7 +264,14 @@ namespace ExcelLibrary.CompoundDocumentFormat
             Int32[] data = new Int32[count];
             for (int i = 0; i < data.Length; i++)
             {
-                data[i] = reader.ReadInt32();
+                try
+                {
+                    data[i] = reader.ReadInt32();
+                }
+                catch (EndOfStreamException)
+                {
+                    data[i] = SID.EOC;
+                }
             }
             return data;
         }
@@ -225,6 +282,15 @@ namespace ExcelLibrary.CompoundDocumentFormat
             {
                 writer.Write(data[i]);
             }
+        }
+
+        public static CompoundDocument CreateFromStream(Stream stream)
+        {
+            CompoundDocument document = new CompoundDocument(stream, new CompoundFileHeader());
+            document.WriteHeader();
+            document.MasterSectorAllocation.AllocateSATSector();
+            document.InitializeDirectoryEntries();
+            return document;
         }
     }
 }

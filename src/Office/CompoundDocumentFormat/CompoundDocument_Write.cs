@@ -140,7 +140,7 @@ namespace ExcelLibrary.CompoundDocumentFormat
                         sid = this.AllocateDataSectorAfter(prev_sid);
                     }
                 }
-                int offset = GetSectorOffset(sid);
+                long offset = GetSectorOffset(sid);
                 Writer.BaseStream.Position = offset;
                 if (index + SectorSize < data.Length)
                 {
@@ -219,7 +219,7 @@ namespace ExcelLibrary.CompoundDocumentFormat
                         sid = this.ShortSectorAllocation.AllocateSectorAfter(prev_sid);
                     }
                 }
-                int offset = GetShortSectorOffset(sid);
+                long offset = GetShortSectorOffset(sid);
                 ShortStreamContainer.Position = offset;
                 if (index + ShortSectorSize < data.Length)
                 {

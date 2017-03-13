@@ -8,9 +8,17 @@ namespace ExcelLibrary.CompoundDocumentFormat
 {
     public partial class CompoundDocument
     {
-        public static CompoundDocument Read(string file)
+        public static CompoundDocument Load(string file)
         {
             CompoundDocument doc = CompoundDocument.Open(file);
+            doc.ReadAllStreamData();
+            doc.Close();
+            return doc;
+        }
+
+        public static CompoundDocument Load(Stream stream)
+        {
+            CompoundDocument doc = CompoundDocument.Open(stream);
             doc.ReadAllStreamData();
             doc.Close();
             return doc;
@@ -109,33 +117,33 @@ namespace ExcelLibrary.CompoundDocumentFormat
             }
         }
 
-        private int GetSectorOffset(int SID)
+        private long GetSectorOffset(int SID)
         {
-            return 512 + SectorSize * SID;
+            return 512 + Math.BigMul(SectorSize, SID);
         }
 
-        private int GetShortSectorOffset(int SSID)
+        private long GetShortSectorOffset(int SSID)
         {
-            return ShortSectorSize * SSID;
+            return Math.BigMul(ShortSectorSize, SSID);
         }
 
         internal int[] ReadSectorDataAsIntegers(int SID)
         {
-            int offset = GetSectorOffset(SID);
+            long offset = GetSectorOffset(SID);
             Reader.BaseStream.Position = offset;
             return ReadArrayOfInt32(Reader, SectorSize / 4);
         }
 
         private byte[] ReadSectorDataAsBytes(int SID)
         {
-            int offset = GetSectorOffset(SID);
+            long offset = GetSectorOffset(SID);
             Reader.BaseStream.Position = offset;
             return Reader.ReadBytes(SectorSize);
         }
 
         private byte[] ReadShortSectorDataAsBytes(int SSID)
         {
-            int offset = GetShortSectorOffset(SSID);
+            long offset = GetShortSectorOffset(SSID);
             ShortStreamContainer.Seek(offset, SeekOrigin.Begin);
             return StreamHelper.ReadBytes(ShortStreamContainer, ShortSectorSize);
         }

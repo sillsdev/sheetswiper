@@ -20,7 +20,7 @@ namespace ExcelLibrary.BinaryFileFormat
 
         public CellFormatCollection CellFormats = new CellFormatCollection();
 
-        public UniqueList<Image> Images = new UniqueList<Image>();
+        public FastSearchList<Image> Images = new FastSearchList<Image>();
 
         public List<FONT> Fonts = new List<FONT>();
 
@@ -85,8 +85,7 @@ namespace ExcelLibrary.BinaryFileFormat
 
         public double EncodeDateTime(DateTime value)
         {
-            double days = (value - BaseDate).Days;
-            if (days > 365) days++;
+            double days = (value - BaseDate).TotalDays;
             return days;
         }
 
