@@ -1,5 +1,8 @@
 Sheet Swiper converts spreadsheets containing linguistic data to Standard Format (for use with Linguist's Toolbox, Phonology Assistant, Lexique Pro, FLex, WeSay, etc.). The rules for how to do the conversion come from the first rows of the spreadsheet itself, so subsequent, repeated conversions are easy for non-computer savvy users to do.
 
+## Downloads
+https://github.com/sillsdev/sheetswiper/releases
+
 ## Requirements
 
 Any Microsoft Windows with Microsoft .Net Framework v4.5 or greater.
