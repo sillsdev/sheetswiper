@@ -98,7 +98,7 @@ namespace SheetSwiper
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"http://projects.palaso.org/projects/sheetswiper/files");
+            System.Diagnostics.Process.Start(@"https://github.com/sillsdev/sheetswiper/releases");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -111,11 +111,6 @@ namespace SheetSwiper
             System.Diagnostics.Process.Start(@"http://sil.org");
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start(@"http://palaso.org");
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
@@ -124,6 +119,11 @@ namespace SheetSwiper
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(@"http://code.google.com/p/excellibrary");
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
