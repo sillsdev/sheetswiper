@@ -7,7 +7,7 @@ namespace ExcelLibrary.BinaryFileFormat
 {
 	public partial class SubRecord
 	{
-		public static SubRecord Read(Stream stream)
+		public static new SubRecord Read(Stream stream)
 		{
 			SubRecord record = SubRecord.ReadBase(stream);
 			switch (record.Type)
