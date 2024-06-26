@@ -63,10 +63,9 @@ namespace ExcelLibrary.CompoundDocumentFormat
             {
                 return Open(stream);
             }
-            catch (Exception ex)
+            finally
             {
                 stream.Close();
-                throw ex;
             }
         }
 

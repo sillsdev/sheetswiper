@@ -67,7 +67,7 @@ namespace SheetSwipe
                     return false;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return true;
             }
