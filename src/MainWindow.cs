@@ -342,7 +342,7 @@ namespace SheetSwipe
             dialog.CheckPathExists = true;
             dialog.CheckFileExists = true;
             dialog.AddExtension = true;
-            dialog.Filter = "Excel 97-2003 Workbook (*.xls)|*.xls";
+            dialog.Filter = "Excel Workbook (*.xls;*.xlsx)|*.xls;*.xlsx";
 
             if (
                 !string.IsNullOrEmpty(Settings1.Default.PreviousSheetPath)
