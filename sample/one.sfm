@@ -6,22 +6,27 @@
 \number 2
 \ge sun
 \pronR kəˈni˨˩
+\pronS 
 
 \number 3
 \ge moon
 \pronR ɭɔʔ
+\pronS 
 
 \number 4
 \ge star
 \pronR tæ̃.ˈpɔ
+\pronS 
 
 \number 5
 \ge cloud
 \pronR kʰœ.ʔa.nɯ̃
+\pronS 
 
 \number 6
 \ge mist/fog
 \pronR sə.dã.ˈtui
+\pronS 
 
 \number 7
 \ge rain
@@ -31,10 +36,12 @@
 \number 8
 \ge rainbow
 \pronR kũ.bə,jɛ
+\pronS 
 
 \number 9
 \ge lightning
 \pronR ʔã.ˈɭo.sə.de.tɛ
+\pronS 
 
 \number 10
 \ge thunder
@@ -44,66 +51,82 @@
 \number 11
 \ge shadow/shade
 \pronR kæ.ˈkʰui
+\pronS 
 
 \number 12
 \ge wind
 \pronR æ.liʔ˦˥
+\pronS 
 
 \number 13
 \ge night
 \pronR kə.ˈdɯ̃
+\pronS 
 
 \number 14
 \ge day
 \pronR kə.ˈni˨˩
+\pronS 
 
 \number 15
 \ge to be hot (weather)
 \pronR βi.ˈtɛ
+\pronS 
 
 \number 16
 \ge to be cold (weather)
 \pronR ˈde.te
+\pronS 
 
 \number 17
 \ge morning
 \pronR kə.ˈdã
+\pronS 
 
 \number 18
 \ge noon
 \pronR kə.ni.ˈʔã.hũ
+\pronS 
 
 \number 19
 \ge yesterday
 \pronR ʝa.ˈdɯ̃ʔ
+\pronS 
 
 \number 20
 \ge tomorrow
 \pronR ˈkʰõ.ta
+\pronS 
 
 \number 21
 \ge year
 \pronR sə.ˈni˨˩
+\pronS 
 
 \number 22
 \ge east
 \pronR ˈkənĩ.ˌkəsɛ
+\pronS 
 
 \number 23
 \ge west
 \pronR ˈkə.ni.kəˈdɯ̃ʔ
+\pronS 
 
 \number 24
 \ge south
 \pronR ˈə.tɯ̃
+\pronS 
 
 \number 25
 \ge north
 \pronR ˈə.lɯ̃ʔ
+\pronS 
 
 \number 26
 \ge water
 \pronR tuiʔ
+\pronS 
 
 \number 27
 \ge to be warm (water)
@@ -128,10 +151,12 @@
 \number 31
 \ge sea
 \pronR pã.ˈle
+\pronS 
 
 \number 32
 \ge soil (earth)
 \pronR kə.ˈlɔ̃
+\pronS 
 
 \number 33
 \ge mud
@@ -141,10 +166,12 @@
 \number 34
 \ge dust
 \pronR a.mɔ.ˈdiʔ
+\pronS 
 
 \number 35
 \ge stone
 \pronR ka.ˈlũ
+\pronS 
 
 \number 36
 \ge sand
@@ -154,22 +181,27 @@
 \number 37
 \ge lime (for betel chew)
 \pronR tʰõ
+\pronS 
 
 \number 38
 \ge gold
 \pronR sʰui
+\pronS 
 
 \number 39
 \ge silver
 \pronR tã.ˈkɛ
+\pronS 
 
 \number 40
 \ge iron
 \pronR sʰɯ̃
+\pronS 
 
 \number 41
 \ge mountain
 \pronR ˌmɛʔ.a.ˈhũʔ
+\pronS 
 
 \number 42
 \ge cave
@@ -177,10 +209,14 @@
 \pronS ta.bu.kʰɔ
 
 \number Plants/Food
+\ge 
+\pronR 
+\pronS 
 
 \number 43
 \ge jungle/forest
 \pronR ˈæ.tœ
+\pronS 
 
 \number 44
 \ge tree
@@ -200,7 +236,7 @@
 \number 47
 \ge thorn
 \pronR a.ˈli.sə.pɔ
-\pronS ?.li
+\pronS æ.li
 
 \number 48
 \ge root (tree)
@@ -215,10 +251,12 @@
 \number 50
 \ge flower
 \pronR ˈʔə.pa
+\pronS 
 
 \number 51
 \ge fruit (tree)
 \pronR ʔə.ˈtʰɑi
+\pronS 
 
 \number 52
 \ge seed (tree)
@@ -228,7 +266,7 @@
 \number 53
 \ge grass
 \pronR æ.sa.ˈdiʔ
-\pronS ?.sa
+\pronS æ.sa
 
 \number 54
 \ge bamboo plant (large)
@@ -243,6 +281,7 @@
 \number 56
 \ge mushroom
 \pronR tə.ˈpɔ.paʔ
+\pronS 
 
 \number 57
 \ge cane/rattan
@@ -262,10 +301,12 @@
 \number 60
 \ge betel nut
 \pronR kɔ̃.ˈtʰɑi
+\pronS 
 
 \number 61
 \ge opium
 \pronR ɓiʔ
+\pronS 
 
 \number 62
 \ge liquor
@@ -275,1570 +316,1990 @@
 \number 63
 \ge banana (fruit)
 \pronR tə.ˈbɔ̃.tʰɑi
+\pronS 
 
 \number 64
 \ge mango (fruit)
 \pronR sə.ˈpʰo.tʰɑi
+\pronS 
 
 \number 65
 \ge eggplant (fruit)
 \pronR ˈme.ta.tʰi
+\pronS 
 
 \number 66
 \ge soy bean
 \pronR sə.rɔi.ˈmɯ.ka.rɔ̃
+\pronS 
 
 \number 67
 \ge ginger
 \pronR kə.ˈtẽ
+\pronS 
 
 \number 68
 \ge garlic
 \pronR kə.su.ˈka.lõ
+\pronS 
 
 \number 69
 \ge corn
 \pronR mo.kɛ.ˈbõ
+\pronS 
 
 \number 70
 \ge red pepper
 \pronR sæ.ˈpʰo.tɑi
+\pronS 
 
 \number 71
 \ge dry (burned) field
 \pronR ˈlã.ŋɔ
+\pronS 
 
 \number 72
 \ge wet rice field
 \pronR ˈlai.prã
+\pronS 
 
 \number 73
 \ge paddy rice
 \pronR sʰɔ
+\pronS 
 
 \number 74
 \ge rice seedling
 \pronR sʰɔ.ˈdiʔ
+\pronS 
 
 \number 75
 \ge to be ripe
 \pronR ˈmɯ̃.tɛ
+\pronS 
 
 \number 76
 \ge pounded rice
 \pronR sʰɔ.ˈniʔ˥
+\pronS 
 
 \number 77
 \ge cooked rice
 \pronR bəʔ
+\pronS 
 
 \number 78
 \ge to winnow (rice)
 \pronR sʰɔ.ˈhɔ.tɛ
+\pronS 
 
 \number 79
 \ge to dry (rice)
 \pronR sʰɔ.ˈɾam.bɔ.tɛ
+\pronS 
 
 \number 80
 \ge to pound (rice)
 \pronR sʰɔ.taĩ.ˈtɛ
+\pronS 
 
 \number 81
 \ge to grind
 \pronR sʰɔ.ˈke.tɛ
+\pronS 
 
 \number 82
 \ge to cook (rice)
 \pronR ˈbə.tɔ̃.tɛ
+\pronS 
 
 \number 83
 \ge to boil (rice)
 \pronR ˈbɯ.tɛ
+\pronS 
 
 \number 84
 \ge rice husk
 \pronR ˈsʰo.mə.te.tɛ
+\pronS 
 
 \number 85
 \ge salt
 \pronR bə.ˈloi
+\pronS 
 
 \number Animals
+\ge 
+\pronR 
+\pronS 
 
 \number 86
 \ge animal
 \pronR kə.ˈhi.ə.bɔi.na
+\pronS 
 
 \number 87
 \ge tiger
 \pronR tə.ˈkɑi
+\pronS 
 
 \number 88
 \ge pangolin
 \pronR sə.ˈpʰɨ.ra.kəʔ
+\pronS 
 
 \number 89
 \ge bear
 \pronR ta.ˈβɔ̃
+\pronS 
 
 \number 90
 \ge barking deer
 \pronR sə.ˈkʰiʔ
+\pronS 
 
 \number 91
 \ge monkey
 \pronR kə.ˈlɑi
+\pronS 
 
 \number 92
 \ge gibbon
 \pronR lɑi.ˈɸɔ
+\pronS 
 
 \number 93
 \ge rabbit
 \pronR ʝõ
+\pronS 
 
 \number 94
 \ge porcupine
 \pronR so.bə.ˈhiʔ
+\pronS 
 
 \number 95
 \ge rat
 \pronR bə.ˈʝɯ
+\pronS 
 
 \number 96
 \ge dog
 \pronR ʔui
+\pronS 
 
 \number 97
 \ge to bark
 \pronR ʔu.ˈnæ.de
+\pronS 
 
 \number 98
 \ge to bite
 \pronR ˈke.tɛ
+\pronS 
 
 \number 99
 \ge cat
 \pronR mi.ˈbɔi
+\pronS 
 
 \number 100
 \ge pig
 \pronR ʔowʔ
+\pronS 
 
 \number 101
 \ge cow
 \pronR ra.ˈbɔi
+\pronS 
 
 \number 102
 \ge milk
 \pronR ra.bɔi.kə.nɨ.ˈtui
+\pronS 
 
 \number 103
 \ge buffalo
 \pronR bæ.ˈnɔ
+\pronS 
 
 \number 104
 \ge horn (of buffalo)
 \pronR ˈbæ.nɔ.tə.ki
+\pronS 
 
 \number 105
 \ge tail
 \pronR tə.ˈmɑi
+\pronS 
 
 \number 106
 \ge elephant
 \pronR kə.ˈsʰɑi
+\pronS 
 
 \number 107
 \ge elephant tusk
 \pronR ka.ˈsʰɑi.ɸɔ
+\pronS 
 
 \number 108
 \ge bird
 \pronR tə.ˈβɔ
+\pronS 
 
 \number 109
 \ge birdˈs nest
 \pronR tə.ˈβɔ.tə.ˌbɨ
+\pronS 
 
 \number 110
 \ge wing
 \pronR tə.ˈβɔ.mə.ˌkʰi
+\pronS 
 
 \number 111
 \ge feather (body hair)
 \pronR tə.βɔ.ˈmui
+\pronS 
 
 \number 112
 \ge to fly
 \pronR æ.ˈja.te
+\pronS 
 
 \number 113
 \ge egg
 \pronR kə.ˈtui
+\pronS 
 
 \number 114
 \ge chicken
 \pronR ʔæ
+\pronS 
 
 \number 115
 \ge crested (of chicken or bird)
 \pronR ˈsʰa.pʰrẽ
+\pronS 
 
 \number 116
 \ge duck
 \pronR mõ.ˈpɑi
+\pronS 
 
 \number 117
 \ge fish
 \pronR moi˦˥
+\pronS 
 
 \number 118
 \ge snake
 \pronR ba.ˈrui˨˩
+\pronS 
 
 \number 119
 \ge house lizard
 \pronR ẽ.ba.bo.ˈkre
+\pronS 
 
 \number 120
 \ge turtle
 \pronR te.ˈliʔ 
+\pronS 
 
 \number 121
 \ge crocodile
 \pronR sʰə.ˈtã
+\pronS 
 
 \number 122
 \ge frog
 \pronR ui.ˈpʰɔ
+\pronS 
 
 \number 123
 \ge insect
 \pronR ɭõ.ka
+\pronS 
 
 \number 124
 \ge spider
 \pronR bom.ˈba.hæʔ
+\pronS 
 
 \number 125
 \ge spider web
 \pronR bɔm.ba.hæ.ˈʔi
+\pronS 
 
 \number 126
 \ge louse (head)
 \pronR ʔə.ˈhiʔ
+\pronS 
 
 \number 127
 \ge termite
 \pronR kʰɔ.ˈɾɔ
+\pronS 
 
 \number 128
 \ge cockroach
 \pronR kʰa.ˈɭɔ
+\pronS 
 
 \number 129
 \ge snail
 \pronR nɑi.ˈnɛ
+\pronS 
 
 \number 130
 \ge mosquito
 \pronR kʰã.sə.ˈra
+\pronS 
 
 \number 131
 \ge bee
 \pronR kʰɔi
+\pronS 
 
 \number 132
 \ge fly
 \pronR mə.ˈtaʔ
+\pronS 
 
 \number 133
 \ge butterfly
 \pronR pʰɛ.li.ˈdeĩ.tɑi
+\pronS 
 
 \number 134
 \ge scorpion
 \pronR kə.nĩ.tə.ʔɑi
+\pronS 
 
 \number 135
 \ge water leech
 \pronR tui.ʔã.ˈɲɯ
+\pronS 
 
 \number 136
 \ge land leech
 \pronR ta.ˈβɔ.sə.la
+\pronS 
 
 \number 137
 \ge earthworm
 \pronR kui.ˈdeĩ
+\pronS 
 
 \number Body
+\ge 
+\pronR 
+\pronS 
 
 \number 138
 \ge head
 \pronR a.ˈɭœ
+\pronS 
 
 \number 139
 \ge face
 \pronR ə.ˈmi.kɯ̃
+\pronS 
 
 \number 140
 \ge brain
 \pronR ə.lø.ʔa.ˈho
+\pronS 
 
 \number 141
 \ge hair (head)
 \pronR ə.ˈsã
+\pronS 
 
 \number 142
 \ge forehead
 \pronR lø.ˈpæ̃
+\pronS 
 
 \number 143
 \ge eyebrow
 \pronR ə.ˈmiˈkaʔ
+\pronS 
 
 \number 144
 \ge eye
 \pronR ə.ˈmi
+\pronS 
 
 \number 145
 \ge eyelid
 \pronR ə.mi.ˈpʰɹ
+\pronS 
 
 \number 146
 \ge nose
 \pronR nɔ.ˈrã
+\pronS 
 
 \number 147
 \ge cheek
 \pronR tã.bẽ
+\pronS 
 
 \number 148
 \ge ear
 \pronR ka.nɔ.ˈkʰi
+\pronS 
 
 \number 149
 \ge mouth
 \pronR ta.ˈbɔ̃
+\pronS 
 
 \number 150
 \ge tongue
 \pronR bə.ˈlɑi
+\pronS 
 
 \number 151
 \ge saliva
 \pronR mə.ˈse
+\pronS 
 
 \number 152
 \ge tooth
 \pronR ə.ˈɸɔ
+\pronS 
 
 \number 153
 \ge gums
 \pronR a.ˈɸɔ.sai.tɑi
+\pronS 
 
 \number 154
 \ge chin
 \pronR tẽ.ˈkɯ̃
+\pronS 
 
 \number 155
 \ge beard
 \pronR tə.pɔ.ˈmui
+\pronS 
 
 \number 156
 \ge to shave (beard)
 \pronR æ.ˈba.teʔ
+\pronS 
 
 \number 157
 \ge neck
 \pronR kə.nɔ.ˈʝa
+\pronS 
 
 \number 158
 \ge shoulder
 \pronR ba.lẽ.ˈpa
+\pronS 
 
 \number 159
 \ge back
 \pronR a.nã.brõʔ
+\pronS 
 
 \number 160
 \ge belly
 \pronR a.ʝoʔ
+\pronS 
 
 \number 161
 \ge navel
 \pronR lẽ.ˈlõ
+\pronS 
 
 \number 162
 \ge heart
 \pronR bə.ˈlõ
+\pronS 
 
 \number 163
 \ge liver
 \pronR ə.mə.ˈtɯ̃ʔ
+\pronS 
 
 \number 164
 \ge intestines
 \pronR ta.ˈriʔ
+\pronS 
 
 \number 165
 \ge arm/hand
 \pronR ə.ˈkœ
+\pronS 
 
 \number 166
 \ge elbow
 \pronR ə.kœ.sə.ˈkɯ
+\pronS 
 
 \number 167
 \ge armpit
 \pronR ʝẽ.ˈkui
+\pronS 
 
 \number 168
 \ge palm
 \pronR ə.'kœ.pa.te
+\pronS 
 
 \number 169
 \ge finger
 \pronR ə.ˌkœ.ba.ˈʝõ
+\pronS 
 
 \number 170
 \ge fingernail
 \pronR kœ.bə.ˈsɯ̃
+\pronS 
 
 \number 171
 \ge leg/foot
 \pronR ə.ˈkʰɔuʔ
+\pronS 
 
 \number 172
 \ge thigh
 \pronR ə.ˈpʰɑi
+\pronS 
 
 \number 173
 \ge knee
 \pronR kʰoʔ.ˈkʰɯ
+\pronS 
 
 \number 174
 \ge calf
 \pronR ʔə.ko.ã.ˈpɔ̃
+\pronS 
 
 \number 175
 \ge shin
 \pronR ʔə.kʰo.su.ˈkrã
+\pronS 
 
 \number 176
 \ge heel
 \pronR ʔə.kʰo.mə.ˈtui
+\pronS 
 
 \number 177
 \ge bone
 \pronR ʔə.ˈhuʔ
+\pronS 
 
 \number 178
 \ge rib
 \pronR mə̃.ˈnã.huʔ
+\pronS 
 
 \number 179
 \ge meat/flesh (edible)
 \pronR ʔa.ˈŋa
+\pronS 
 
 \number 180
 \ge fat/grease
 \pronR ʔa.tʰa
+\pronS 
 
 \number 181
 \ge skin
 \pronR ʔa.ŋã.ˈpʰɯ
+\pronS 
 
 \number 182
 \ge blood
 \pronR ʔa.ˈtiʔ
+\pronS 
 
 \number 183
 \ge sweat
 \pronR ʔæ.ʔu.ˈtui
+\pronS 
 
 \number 184
 \ge pus
 \pronR ʔə.ˈnai
+\pronS 
 
 \number 185
 \ge excrement
 \pronR ʔə.ˈʔeʔ
+\pronS 
 
 \number 186
 \ge urine
 \pronR pə.jõ.ˈtui
+\pronS 
 
 \number People
+\ge 
+\pronR 
+\pronS 
 
 \number 187
 \ge man
 \pronR nɔ̃.mə.ˈsɔ
+\pronS 
 
 \number 188
 \ge woman
 \pronR ˈnɔ̃.bə.diʔ
+\pronS 
 
 \number 189
 \ge person
 \pronR cʰɪ.ˈmi
+\pronS 
 
 \number 190
 \ge father
 \pronR ʔə.bə.ˈʔai
+\pronS 
 
 \number 191
 \ge mother
 \pronR ʔə.nə.ˈʔoi
+\pronS 
 
 \number 192
 \ge to be old (person)
 \pronR mə.tɔŋ.ˈte
+\pronS 
 
 \number 193
 \ge child (oneˈs own)
 \pronR sə.nũ.sə.ˈpʰɔ
+\pronS 
 
 \number 194
 \ge son-in-law
 \pronR mo.ˈsɛ̃
+\pronS 
 
 \number 195
 \ge husband
 \pronR nɔ̃.ˈpʰõ
+\pronS 
 
 \number 196
 \ge wife
 \pronR nɔ̃.ˈpui
+\pronS 
 
 \number 197
 \ge widow
 \pronR ˈɭœ.mã.nə.oi
+\pronS 
 
 \number 198
 \ge brother (elder of f)
 \pronR ʝə.ˈʔai
+\pronS 
 
 \number 199
 \ge brother (elder of m)
 \pronR ʝə.ˈʔai
+\pronS 
 
 \number 200
 \ge sister (elder of f)
 \pronR ʝə.ˈʔai
+\pronS 
 
 \number 201
 \ge sister (elder of m)
 \pronR ʝə.ˈʔai
+\pronS 
 
 \number 202
 \ge brother (younger of f)
 \pronR kãm.ˈpro
+\pronS 
 
 \number 203
 \ge brother (younger of m)
 \pronR kam.ˈbɞ
+\pronS 
 
 \number 204
 \ge sister (younger of f)
 \pronR ti.ˈso
+\pronS 
 
 \number 205
 \ge sister (younger of m)
 \pronR ti.ˈso
+\pronS 
 
 \number 206
 \ge friend
 \pronR rɔi.ˈʝa
+\pronS 
 
 \number 207
 \ge name
 \pronR ə.ˈmɯ̃
+\pronS 
 
 \number Home
+\ge 
+\pronR 
+\pronS 
 
 \number 208
 \ge village
 \pronR vãʔ
+\pronS 
 
 \number 209
 \ge road/path
 \pronR ɭo.ˈla
+\pronS 
 
 \number 210
 \ge boat
 \pronR bə.ˈɭɔ̃
+\pronS 
 
 \number 211
 \ge house
 \pronR ʔi
+\pronS 
 
 \number 212
 \ge door
 \pronR kə.'tʰok̚
+\pronS 
 
 \number 213
 \ge roof
 \pronR ei.ˈpʰɞ
+\pronS 
 
 \number 214
 \ge area under house
 \pronR ʔi.lɛ.ˈkui
+\pronS 
 
 \number 215
 \ge wall of house
 \pronR ˈʔẽ.pa
+\pronS 
 
 \number 216
 \ge sleeping area
 \pronR ʔi.ˈna.mi.ta
+\pronS 
 
 \number 217
 \ge mat
 \pronR ˈkʰã.dĩ
+\pronS 
 
 \number 218
 \ge pillow
 \pronR lø.'krẽ
+\pronS 
 
 \number 219
 \ge blanket
 \pronR kə.ˈni
+\pronS 
 
 \number 220
 \ge clothing
 \pronR kə.ʔoʔ
+\pronS 
 
 \number 221
 \ge to weave (cloth)
 \pronR ʔæ.kʰɯ.ˈde
+\pronS 
 
 \number 222
 \ge to dye (cloth)
 \pronR ə.ˈrɔ.mə.sũ.te
+\pronS 
 
 \number 223
 \ge sarong (male)
 \pronR lõ.kiʔ
+\pronS 
 
 \number 224
 \ge sarong (female)
 \pronR ni.tʰa
+\pronS 
 
 \number 225
 \ge trousers
 \pronR pʰom.pi
+\pronS 
 
 \number 226
 \ge to sew
 \pronR hui.te
+\pronS 
 
 \number 227
 \ge needle
 \pronR sa.pʰrɯ̃
+\pronS 
 
 \number 228
 \ge comb
 \pronR mə.tʰiʔ
+\pronS 
 
 \number 229
 \ge ring
 \pronR kœ.sa.bɯʔ
+\pronS 
 
 \number 230
 \ge paper
 \pronR sɛ̃.ra
+\pronS 
 
 \number 231
 \ge pot (cooking)
 \pronR nəʔɔ̃
+\pronS 
 
 \number 232
 \ge mortar
 \pronR sõ.sɔ
+\pronS 
 
 \number 233
 \ge pestle
 \pronR sõ.ja
+\pronS 
 
 \number 234
 \ge spoon
 \pronR kə.sɔi
+\pronS 
 
 \number 235
 \ge plate
 \pronR pɔ̃.kæ
+\pronS 
 
 \number 236
 \ge firewood
 \pronR tẽʔ
+\pronS 
 
 \number 237
 \ge fire
 \pronR mai
+\pronS 
 
 \number 238
 \ge to burn
 \pronR mai.kã.te
+\pronS 
 
 \number 239
 \ge to extinguish (fire)
 \pronR mai.du.te
+\pronS 
 
 \number 240
 \ge ashes
 \pronR bai.pʰɞ
+\pronS 
 
 \number 241
 \ge smoke
 \pronR mai.kɯ
+\pronS 
 
 \number 242
 \ge drum (musical instrument)
 \pronR ʔæ.tɔ̃
+\pronS 
 
 \number 243
 \ge gong
 \pronR mawʔ
+\pronS 
 
 \number 244
 \ge bow
 \pronR li.βɔ
+\pronS 
 
 \number 245
 \ge crossbow
 \pronR liʔ
+\pronS 
 
 \number 246
 \ge arrow
 \pronR li.βɔ.seʔ
+\pronS 
 
 \number 247
 \ge spear
 \pronR də.ri
+\pronS 
 
 \number 248
 \ge knife/blade
 \pronR æ.keʔ
+\pronS 
 
 \number Verbs
+\ge 
+\pronR 
+\pronS 
 
 \number 249
 \ge to hear
 \pronR tʰɑi.teʔ
+\pronS 
 
 \number 250
 \ge to listen
 \pronR tə.ŋɑi.teʔ
+\pronS 
 
 \number 251
 \ge to smell (catch a scent)
 \pronR ʔə.mui
+\pronS 
 
 \number 252
 \ge to smell (sniff)
 \pronR ʔə.moi.tʰɑi.teʔ
+\pronS 
 
 \number 253
 \ge to see
 \pronR nõ.teʔ
+\pronS 
 
 \number 254
 \ge to look at
 \pronR kʰẽ.teʔ
+\pronS 
 
 \number 255
 \ge to weep
 \pronR rɔ.teʔ
+\pronS 
 
 \number 256
 \ge to eat
 \pronR sa.teʔ
+\pronS 
 
 \number 257
 \ge to swallow
 \pronR bə.jɔŋ.teʔ
+\pronS 
 
 \number 258
 \ge to be hungry
 \pronR ʔæ.jo.ʔæ.lã.teʔ
+\pronS 
 
 \number 259
 \ge to be full (after eating)
 \pronR ʔə.jo.kui.teʔ
+\pronS 
 
 \number 260
 \ge to be thirsty
 \pronR tuiʔaʔhɛ.teʔ
+\pronS 
 
 \number 261
 \ge to drink
 \pronR dui.nɑi.teʔ
+\pronS 
 
 \number 262
 \ge to be drunk (alcohol)
 \pronR ra.bo.ru.teʔ
+\pronS 
 
 \number 263
 \ge to vomit
 \pronR bə.lɔw.teʔ
+\pronS 
 
 \number 264
 \ge to spit
 \pronR mə.se.mə.tʰui.teʔ
+\pronS 
 
 \number 265
 \ge to cough
 \pronR təʔɔ.mə.kʰu.teʔ
+\pronS 
 
 \number 266
 \ge to sneeze
 \pronR ʔə.nɔ̃.nũ.teʔ
+\pronS 
 
 \number 267
 \ge to yawn
 \pronR pə.hã.teʔ
+\pronS 
 
 \number 268
 \ge to breathe
 \pronR ʔæ.hɔ.teʔ
+\pronS 
 
 \number 269
 \ge to blow
 \pronR mɯ.teʔ
+\pronS 
 
 \number 270
 \ge to whistle
 \pronR mo.sui.teʔ
+\pronS 
 
 \number 271
 \ge to suck (milk)
 \pronR ba.jɔ.teʔ
+\pronS 
 
 \number 272
 \ge to lick
 \pronR ba.lɛ.teʔ
+\pronS 
 
 \number 273
 \ge to smile
 \pronR mə.nui.ʒui.teʔ
+\pronS 
 
 \number 274
 \ge to laugh
 \pronR mə.nui.teʔ
+\pronS 
 
 \number 275
 \ge to speak
 \pronR ʔə.lo.ʔæ.pe.teʔ
+\pronS 
 
 \number 276
 \ge to tell
 \pronR tʰui.teʔ
+\pronS 
 
 \number 277
 \ge to shout
 \pronR hã.teʔ
+\pronS 
 
 \number 278
 \ge to answer
 \pronR ə.pre.pɞ.teʔ
+\pronS 
 
 \number 279
 \ge to lie/fib
 \pronR lẽ.teʔ
+\pronS 
 
 \number 280
 \ge to sing
 \pronR ʔæ.ʔo.tʰui.teʔ
+\pronS 
 
 \number 281
 \ge to think
 \pronR ʔæ.tɔ̃.teʔ
+\pronS 
 
 \number 282
 \ge to know
 \pronR mə.nɞ.teʔ
+\pronS 
 
 \number 283
 \ge to forget
 \pronR tə.mã.teʔ
+\pronS 
 
 \number 284
 \ge to choose
 \pronR ˈre.teʔ
+\pronS 
 
 \number 285
 \ge to love
 \pronR ŋɑi.teʔ
+\pronS 
 
 \number 286
 \ge to hate
 \pronR ʔə.mi.æ.so.teʔ
+\pronS 
 
 \number 287
 \ge to wait
 \pronR ̈ˈsɔ̃ŋ.teʔ
+\pronS 
 
 \number 288
 \ge to count
 \pronR ˈtɔw.teʔ
+\pronS 
 
 \number 289
 \ge to be afraid
 \pronR ri.teʔ
+\pronS 
 
 \number 290
 \ge to be angry
 \pronR kə.tɔ.tɔw.teʔ
+\pronS 
 
 \number 291
 \ge to sleep
 \pronR ʔ'i.teʔ
+\pronS 
 
 \number 292
 \ge to snore
 \pronR nə.rã.tũ.sa.teʔ
+\pronS 
 
 \number 293
 \ge to dream
 \pronR ʔa.ma.ʔa.ma.teʔ
+\pronS 
 
 \number 294
 \ge to hurt
 \pronR nɔ.teʔ
+\pronS 
 
 \number 295
 \ge medicine
 \pronR ʔæ.sʰiʔ
+\pronS 
 
 \number 296
 \ge to be itchy
 \pronR mə.tʰa.te.
+\pronS 
 
 \number 297
 \ge to scratch
 \pronR tə.hɔ.teʔ
+\pronS 
 
 \number 298
 \ge to shiver
 \pronR ʔæ.hũ.teʔ
+\pronS 
 
 \number 299
 \ge to die
 \pronR dɯ.teʔ
+\pronS 
 
 \number 300
 \ge ghost
 \pronR sʰe.si
+\pronS 
 
 \number 301
 \ge to sit (remain)
 \pronR ʔæ.tɯ.te
+\pronS 
 
 \number 302
 \ge to stand (remain)
 \pronR ʔæ.tɔ.te
+\pronS 
 
 \number 303
 \ge to kneel
 \pronR kʰɔ.kʰɯ.te.tu.te
+\pronS 
 
 \number 304
 \ge to walk
 \pronR lo.laʔæ.ki.te
+\pronS 
 
 \number 305
 \ge to crawl
 \pronR kɔ.βa.kə.ɭɯ.te
+\pronS 
 
 \number 306
 \ge to come
-\pronR l?.te
+\pronR lø.te
+\pronS 
 
 \number 307
 \ge to enter
 \pronR kõ.te
+\pronS 
 
 \number 308
 \ge to return
 \pronR βɔi.hai.le.te
+\pronS 
 
 \number 309
 \ge to push
 \pronR ˈnui.te
+\pronS 
 
 \number 310
 \ge to pull
 \pronR re.te
+\pronS 
 
 \number 311
 \ge to kick
 \pronR mə.tui.te
+\pronS 
 
 \number 312
 \ge to throw
 \pronR kə.ˈde.te
+\pronS 
 
 \number 313
 \ge to fall (from a height)
 \pronR ʔæ.kra.te
+\pronS 
 
 \number 314
 \ge to swim
 \pronR tui.ja.te
+\pronS 
 
 \number 315
 \ge to float
 \pronR tui.kra.mɔ pʰɔ.lo.ko.te
+\pronS 
 
 \number 316
 \ge to sink
 \pronR tui.æ.sʰə.nõ.te
+\pronS 
 
 \number 317
 \ge to flow (river)
 \pronR tui.lɔ̃.te
+\pronS 
 
 \number 318
 \ge to give
 \pronR baw.te
+\pronS 
 
 \number 319
 \ge to tie
 \pronR ma.kĩŋ.te
+\pronS 
 
 \number 320
 \ge to wipe
 \pronR mɑi.te
+\pronS 
 
 \number 321
 \ge to rub/scrub
 \pronR kə.sæ.te
+\pronS 
 
 \number 322
 \ge to wash (hands)
 \pronR mə.se.te
+\pronS 
 
 \number 323
 \ge to wash (clothes)
 \pronR kə.ɔ.mə.su.te
+\pronS 
 
 \number 324
 \ge to bathe
 \pronR tui.a.hui.te
+\pronS 
 
 \number 325
 \ge to hit/beat (with force)
 \pronR baw.te
+\pronS 
 
 \number 326
 \ge to split/chop
 \pronR ma.kʰui.te
+\pronS 
 
 \number 327
 \ge to slice/saw
 \pronR ʔæ.be.te
+\pronS 
 
 \number 328
 \ge to cut (hair)
 \pronR ʔə.sa.ə.ba.te
+\pronS 
 
 \number 329
 \ge to stab
 \pronR tõ.kʰə.bə.du.te
+\pronS 
 
 \number 330
 \ge to plant
 \pronR ʔe.te
+\pronS 
 
 \number 331
 \ge to dig (with a tool)
 \pronR dɑi.te
+\pronS 
 
 \number 332
 \ge to bury (a corpse)
 \pronR ʔɞ.te
+\pronS 
 
 \number 333
 \ge to work
 \pronR kə.ɭu.sa.te
+\pronS 
 
 \number 334
 \ge to play
 \pronR rɑi.ˈnə.te
+\pronS 
 
 \number 335
 \ge to dance
 \pronR lã.te
+\pronS 
 
 \number 336
 \ge to shoot (gun)
 \pronR mɑi.pɔ.kæ.te
+\pronS 
 
 \number 337
 \ge to hunt
 \pronR sʰæ.hɯ.te
+\pronS 
 
 \number 338
 \ge to kill
 \pronR ba.du.te
+\pronS 
 
 \number 339
 \ge to fight (hand-to-hand)
 \pronR ba.du.te
+\pronS 
 
 \number 340
 \ge to buy
 \pronR ra.te
+\pronS 
 
 \number 341
 \ge to sell
 \pronR jɔ.te
+\pronS 
 
 \number 342
 \ge to exchange
-\pronR ?.le.te
+\pronR æ.le.te
+\pronS 
 
 \number 343
 \ge to pay
 \pronR ʔə.βã.pɯ.te
+\pronS 
 
 \number 344
 \ge to steal
 \pronR bə.ru.te
+\pronS 
 
 \number Numbers
+\ge 
+\pronR 
+\pronS 
 
 \number 345
 \ge one (person)
 \pronR lɔ̃.tɐ
+\pronS 
 
 \number 346
 \ge two (persons)
 \pronR lɔ̃.ne.tɐ
+\pronS 
 
 \number 347
 \ge three (persons)
 \pronR lɔ̃.tũ.tɐ
+\pronS 
 
 \number 348
 \ge four (persons)
 \pronR lɔ̃.bə.li.tɐ
+\pronS 
 
 \number 349
 \ge five (persons)
 \pronR lɔ̃.pã.tɐ
+\pronS 
 
 \number 350
 \ge six (persons)
 \pronR lɔ̃.tə.ru.tɐ
+\pronS 
 
 \number 351
 \ge seven (persons)
 \pronR lɔ̃.sə.ri.tɐ
+\pronS 
 
 \number 352
 \ge eight (persons)
 \pronR lɔ̃.te.jə.tɐ
+\pronS 
 
 \number 353
 \ge nine (persons)
 \pronR lɔ̃.tə.ko.tɐ
+\pronS 
 
 \number 354
 \ge ten (persons)
 \pronR lɔ̃.hõ.tɐ
+\pronS 
 
 \number 355
 \ge twenty (persons)
 \pronR kui.sʰə.tɐ
+\pronS 
 
 \number 356
 \ge hundred (persons)
 \pronR sõ.wai.tɐ
+\pronS 
 
 \number 357
 \ge thousand (persons)
 \pronR lɔ̃.sã.tɐ
+\pronS 
 
 \number 358
 \ge to be many (people)
 \pronR ʔõ.mã
+\pronS 
 
 \number 359
 \ge all
 \pronR a.kʰrə̃.lə̃
+\pronS 
 
 \number 360
 \ge some (people)
 \pronR kæ.hɯʔ
+\pronS 
 
 \number 361
 \ge to be few (people)
 \pronR ʔa.je.so.so
+\pronS 
 
 \number 362
 \ge half (quantity)
 \pronR pʰɯ.tɐ
+\pronS 
 
 \number Dimensions
+\ge 
+\pronR 
+\pronS 
 
 \number 363
 \ge to be big
 \pronR lẽ.pu.te
+\pronS 
 
 \number 364
 \ge to be small
 \pronR sə.pi.te
+\pronS 
 
 \number 365
 \ge to be long
 \pronR sa.tui.te
+\pronS 
 
 \number 366
 \ge to be short (length)
 \pronR tui.te
+\pronS 
 
 \number 367
 \ge to be tall
 \pronR ʔæ.sɔ̃.te
+\pronS 
 
 \number 368
 \ge to be short (height)
 \pronR ʔæ.nai.te
+\pronS 
 
 \number 369
 \ge to be thick (thing)
 \pronR to.kʰɯ.te
+\pronS 
 
 \number 370
 \ge to be thin (thing)
 \pronR ʔã.pʰɔ.de.te
+\pronS 
 
 \number 371
 \ge to be fat (person)
 \pronR lẽ.pʰu.te
+\pronS 
 
 \number 372
 \ge to be skinny (person)
 \pronR ʔə.ta.sə.pi.te
+\pronS 
 
 \number 373
 \ge to be wide/broad
-\pronR b?.te
+\pronR bæ.te
+\pronS 
 
 \number 374
 \ge to be narrow
 \pronR ʔæ.se.te
+\pronS 
 
 \number 375
 \ge to be deep
 \pronR tui.tu.te
+\pronS 
 
 \number 376
 \ge to be shallow
 \pronR tɯ.tu.ɯ.te
+\pronS 
 
 \number 377
 \ge to be round
 \pronR də.lɯ.kɯ.te
+\pronS 
 
 \number 378
 \ge to be full (container)
 \pronR kɔi.pɞ.te
+\pronS 
 
 \number 379
 \ge right side
 \pronR bã.tã
+\pronS 
 
 \number 380
 \ge left side
 \pronR pa.rɔi
+\pronS 
 
 \number 381
 \ge to be straight (road)
 \pronR tɔ.tʰe.te
+\pronS 
 
 \number 382
 \ge to be far (village many miles away)
 \pronR hã.lɔ.te
+\pronS 
 
 \number 383
 \ge to be near (village very near)
 \pronR ʔæ.nai.de.te
+\pronS 
 
 \number 384
 \ge this
 \pronR hi.taʔ
+\pronS 
 
 \number 385
 \ge that
 \pronR ho.taʔ
+\pronS 
 
 \number Appearance
+\ge 
+\pronR 
+\pronS 
 
 \number 386
 \ge black
 \pronR ka.nũ
+\pronS 
 
 \number 387
 \ge white
 \pronR ka.lõ
+\pronS 
 
 \number 388
 \ge red
 \pronR ka.tɛ̃
+\pronS 
 
 \number 389
 \ge green
 \pronR kaʔĩ
+\pronS 
 
 \number 390
 \ge yellow
 \pronR kã.sai
+\pronS 
 
 \number 391
 \ge to be dirty (clothes)
-\pronR po.pr?.te
+\pronR po.præ.te
+\pronS 
 
 \number 392
 \ge to be new (things)
 \pronR kã.tʰə.tɯ
+\pronS 
 
 \number 393
 \ge to be old (things)
 \pronR ka.rũ
+\pronS 
 
 \number 394
 \ge to be dark (outside)
 \pronR βĩ.põ.te
+\pronS 
 
 \number 395
 \ge to be bright (outside)
 \pronR ʔæ.βã.te
+\pronS 
 
 \number 396
 \ge to be the same
 \pronR ʔæ.tu.te
+\pronS 
 
 \number 397
 \ge to be different
 \pronR ʔæ.tu.ʔɯ.ite
+\pronS 
 
 \number Taste/Feel
+\ge 
+\pronR 
+\pronS 
 
 \number 398
 \ge to be sweet
 \pronR tui.di.te
+\pronS 
 
 \number 399
 \ge to be sour
 \pronR tʰo.pʰra.te
+\pronS 
 
 \number 400
 \ge to be bitter
 \pronR kɔ.ʔɔ.te
+\pronS 
 
 \number 401
 \ge to be spicy
 \pronR sʰɔ.hã.te
+\pronS 
 
 \number 402
 \ge to be rotten
 \pronR rɔ.ʔũ.te
+\pronS 
 
 \number 403
 \ge to be swollen
 \pronR pa.kõ.te
+\pronS 
 
 \number 404
 \ge to be dry (rice)
 \pronR pʰui.te
+\pronS 
 
 \number 405
 \ge to be wet (with water)
 \pronR sʰui.pa.te
+\pronS 
 
 \number 406
 \ge to be sharp
 \pronR sə.rɯ.te
+\pronS 
 
 \number 407
 \ge to be blunt
 \pronR ta.mo.kɔ.te
+\pronS 
 
 \number 408
 \ge to be heavy
 \pronR li.pʰi.te
+\pronS 
 
 \number 409
 \ge to be light
 \pronR jã.hɯ.te
+\pronS 
 
 \number 410
 \ge to be hard (rock)
 \pronR tã.kʰa.te
+\pronS 
 
 \number 411
 \ge to be soft (cotton)
 \pronR bɔ.nɔ̃.te
+\pronS 
 
 \number 412
 \ge to be smooth (road)
 \pronR ʔæ.de.nɔ̃.te
+\pronS 
 
 \number 413
 \ge to be rough (road)
 \pronR nɔ.ra.te
+\pronS 
 
 \number Other qualities
+\ge 
+\pronR 
+\pronS 
 
 \number 414
 \ge to be fast
 \pronR ra.pʰi.te
+\pronS 
 
 \number 415
 \ge to be slow
 \pronR le.ho.ʔu.te
+\pronS 
 
 \number 416
 \ge to be strong
 \pronR ʔæ.tɔ.ʔɔ̃.te
+\pronS 
 
 \number 417
 \ge to be weak
 \pronR ʔæ.tɔ.ʔɔ.ʔɔ̃.te
+\pronS 
 
 \number 418
 \ge to be tired
 \pronR ma.sʰæ.te
+\pronS 
 
 \number 419
 \ge to be blind
 \pronR ʔə.mĩ.ba.jɯ.te
+\pronS 
 
 \number 420
 \ge to be deaf
 \pronR ko.no.kʰĩ.pã.te
+\pronS 
 
 \number 421
 \ge bald
 \pronR lø.pæ̃.pa.lĩ.ha.te
+\pronS 
 
 \number 422
 \ge naked
 \pronR ni.tʰa.ku.ə.na.ʔu.te
+\pronS 
 
 \number 423
 \ge to be good
 \pronR hɔi.te
+\pronS 
 
 \number 424
 \ge to be bad
 \pronR hoi.ʔə.te
+\pronS 
 
 \number 425
 \ge to be correct
 \pronR tə.tã.te
+\pronS 
 
 \number 426
 \ge to be wrong
 \pronR tə.mã.te
+\pronS 
 
 \number Misc
+\ge 
+\pronR 
+\pronS 
 
 \number 427
 \ge when (past)
 \pronR ma.ni.me
+\pronS 
 
 \number 428
 \ge when (future)
 \pronR ma.ni.ɯ.me
+\pronS 
 
 \number 429
 \ge where
 \pronR ma.ɯ.me
+\pronS 
 
 \number 430
 \ge who
 \pronR ʔæ.mi.me
+\pronS 
 
 \number 431
 \ge what
 \pronR ʔæ.tɛ.me
+\pronS 
 
 \number 432
 \ge how many (persons)
 \pronR lɔ̃.mai.ʔai.tə.me
+\pronS 
 
 \number 433
 \ge I (1s)
 \pronR kaiʔ
+\pronS 
 
 \number 434
 \ge thou (2s)
 \pronR na
+\pronS 
 
 \number 435
 \ge he/she (3s)
 \pronR ʔa.ni
+\pronS 
 
 \number 436
 \ge we (1p)
 \pronR kai.se
+\pronS 
 
 \number 437
 \ge you (2p)
 \pronR na.se
+\pronS 
 
 \number 438
 \ge they (3p)
 \pronR ʔə.ni.se
+\pronS 
 
 \number 439
 \ge to take
 \pronR la.teʔ
+\pronS 
 
 \number 440
 \ge to disappear (light)
 \pronR la.ja.teʔ
+\pronS 
 
 \number 441
 \ge to bend
 \pronR æ.kʰɯ̃.te
+\pronS 
 
 \number 442
 \ge to lift
 \pronR ta.rãŋ.te
+\pronS 
 
 \number 443
 \ge to do/make (something)
 \pronR sʰa.te
+\pronS 
 
 \number 444
 \ge donˈt do it
 \pronR sʰa.ha
+\pronS 
 
 \number 445
 \ge to be difficult
 \pronR kʰa.pʰi.te
+\pronS 
 
 \number 446
 \ge to be easy
 \pronR ʝa.ho.te
+\pronS 
 
 \number 447
 \ge to be loose
 \pronR æ.lõŋ.te
+\pronS 
 
 \number 448
 \ge to set free, let go (animal)
 \pronR lɔi.ja.te
+\pronS 
 
 \number 449
 \ge to squeeze
 \pronR ta.bi.te
+\pronS 
 
