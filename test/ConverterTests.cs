@@ -15,7 +15,7 @@ public class ConverterTests
     }
 
     [Test]
-    public void Test1()
+    public void ConvertXls()
     {
         Assert.Multiple(() =>
         {
@@ -29,6 +29,30 @@ public class ConverterTests
 
         var actual = Converter.Convert(
             Path.Combine(TestContext.CurrentContext.TestDirectory, "one.xls")
+        );
+
+        var expected = File.ReadAllText(
+            Path.Combine(TestContext.CurrentContext.TestDirectory, "one.sfm")
+        );
+
+        Assert.That(actual, Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void ConvertXlsx()
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(
+                File.Exists(Path.Combine(TestContext.CurrentContext.TestDirectory, "one.xlsx"))
+            );
+            Assert.That(
+                File.Exists(Path.Combine(TestContext.CurrentContext.TestDirectory, "one.sfm"))
+            );
+        });
+
+        var actual = Converter.Convert(
+            Path.Combine(TestContext.CurrentContext.TestDirectory, "one.xlsx")
         );
 
         var expected = File.ReadAllText(

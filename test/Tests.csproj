@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <None Include="../sample/one.xls" CopyToOutputDirectory="PreserveNewest" Pack="false" />
+    <None Include="../sample/one.xlsx" CopyToOutputDirectory="PreserveNewest" Pack="false" />
     <None Include="../sample/one.sfm" CopyToOutputDirectory="PreserveNewest" Pack="false" />
   </ItemGroup>
 
