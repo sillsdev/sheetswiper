@@ -31,3 +31,20 @@ We drag that file in and convert:
 Then "review" tab shows what we'll get:
 
 ![image](https://cloud.githubusercontent.com/assets/8448/25486338/11e5b08a-2b1e-11e7-91cb-a84e49613852.png)
+
+## Developers
+
+This project is built using the .Net 8 SDK
+
+```
+dotnet build src\SheetSwiper.sln
+```
+
+```
+dotnet run --project src\SheetSwiper.csproj
+```
+
+### Run tests
+```
+dotnet test src\SheetSwiper.sln
+```
