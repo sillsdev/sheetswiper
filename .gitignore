@@ -8,7 +8,6 @@ output/
 *.resharper
 *.user
 *.ncrunchsolution
-.vscode/
 
 
 */_ReSharper.Caches/
