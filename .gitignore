@@ -1,14 +1,13 @@
 output/
-src/_ReSharper*
-src/obj/
-src/bin/
-src/_UpgradeReport_Files/
-src/UpgradeLog/
+*/_ReSharper*
+*/obj/
+*/bin/
+*/_UpgradeReport_Files/
+*/UpgradeLog/
 *.suo
 *.resharper
 *.user
 *.ncrunchsolution
-.vscode/
 
 
-src/_ReSharper.Caches/
+*/_ReSharper.Caches/
