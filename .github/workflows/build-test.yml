@@ -19,4 +19,12 @@ jobs:
         run: dotnet build src/SheetSwiper.sln --no-restore
 
       - name: Run NUnit Tests
-        run: dotnet test src/SheetSwiper.sln
+        run: dotnet test src/SheetSwiper.sln --logger "trx;LogFileName=test-results.trx"
+
+      - name: Report Test Results
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: NUnit Tests
+          path: '**/test-results.trx'
+          reporter: dotnet-trx
