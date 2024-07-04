@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
@@ -98,17 +99,17 @@ namespace SheetSwiper
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"https://github.com/sillsdev/sheetswiper/releases");
+            openSite(@"https://github.com/sillsdev/sheetswiper/releases");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"http://pnglanguages.org");
+            openSite(@"http://pnglanguages.org");
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"http://sil.org");
+            openSite(@"http://sil.org");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -118,12 +119,20 @@ namespace SheetSwiper
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(@"http://code.google.com/p/excellibrary");
+            openSite(@"https://github.com/ExcelDataReader/ExcelDataReader");
         }
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void openSite(string url)
+        {
+            using Process p = new();
+            p.StartInfo.FileName = url;
+            p.StartInfo.UseShellExecute = true;
+            p.Start();
         }
     }
 }
