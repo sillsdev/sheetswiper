@@ -103,15 +103,14 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.LinkArea = new System.Windows.Forms.LinkArea(83, 104);
+            this.linkLabel5.LinkArea = new System.Windows.Forms.LinkArea(70, 15);
             this.linkLabel5.Location = new System.Drawing.Point(28, 160);
             this.linkLabel5.MaximumSize = new System.Drawing.Size(250, 0);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(249, 42);
             this.linkLabel5.TabIndex = 8;
             this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "The real work, the reading of the spreadsheet, is done via code from Liu JunFeng\'" +
-    "s Excel Reader project.";
+            this.linkLabel5.Text = "The real work, the reading of the spreadsheet, comes from the team at ExcelDataReader.";
             this.linkLabel5.UseCompatibleTextRendering = true;
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
