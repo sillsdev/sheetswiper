@@ -33,10 +33,11 @@ jobs:
           fi
         shell: bash
 
-      - name: Build version ${{ env.VERSION }}
+      - name: Build x64 version ${{ env.VERSION }}
         run: dotnet publish src/SheetSwiper.csproj
 
-      # dotnet publish -r arm64 src/SheetSwiper.csproj
+      - name: Build arm64 version ${{ env.VERSION }}
+        run: dotnet publish src/SheetSwiper.csproj -r arm64
       
       - name: List files and subdirectories
         run: |
@@ -49,9 +50,7 @@ jobs:
           PUBLISH_PATH: 'src\bin\Release\net8.0-windows'
         run: |
           mv ${{env.PUBLISH_PATH}}\win-x64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-x64.exe
-
-
-#          mv ${{env.PUBLISH_PATH}}\win-arm64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-arm64.exe
+          mv ${{env.PUBLISH_PATH}}\win-arm64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-arm64.exe
 
       - uses: actions/upload-artifact@v4
         with:
