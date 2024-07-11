@@ -1,0 +1,87 @@
+name: Sheetswiper - Build exe and create release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Build the app for commits that are tagged starting with 'v' e.g. v1.0
+
+jobs:
+  build-installer:
+    name: Build App and Release
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Set VERSION (e.g. 1.0.0) and FULL_VERSION (e.g. 1.0.0-abcdef4)
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          FULL_VERSION="${VERSION}-${SHORT_SHA}"
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "FULL_VERSION=${FULL_VERSION}" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Validate version format
+        run: |
+          if [[ ! "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Error: Version format is incorrect. It should match N.N.N where N is an integer."
+            exit 1
+          fi
+        shell: bash
+
+      - name: Build version ${{ env.VERSION }}
+        run: dotnet publish src/SheetSwiper.csproj
+
+      # dotnet publish -r arm64 src/SheetSwiper.csproj
+      
+      - name: List files and subdirectories
+        run: |
+          $path = "src/bin/"
+          Get-ChildItem -Path $path -Recurse
+        shell: powershell
+
+      - name: Rename exe file with version and architecture
+        env:
+          PUBLISH_PATH: 'src\bin\Release\net8.0-windows'
+        run: |
+          mv ${{env.PUBLISH_PATH}}\win-x64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-x64.exe
+
+
+#          mv ${{env.PUBLISH_PATH}}\win-arm64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-arm64.exe
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SheetSwiper
+          path: SheetSwiper-*.exe
+          if-no-files-found: error
+
+  sign-installer:
+    name: Sign Sheetswiper installer
+    needs: build-installer
+    uses: sillsdev/codesign/.github/workflows/sign.yml@v2
+    with:
+      artifact: SheetSwiper
+    secrets:
+      certificate: ${{ secrets.CODESIGN_LSDEVSECTIGOEV }}
+
+  create-release:
+    name: Create Release
+    needs: sign-installer
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: SheetSwiper
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: SheetSwiper-*.exe
+          body: |
+            Release for version ${{ github.ref }}
+          draft: true
