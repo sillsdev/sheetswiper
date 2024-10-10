@@ -44,18 +44,19 @@ jobs:
           Get-ChildItem -Path $path -Recurse
         shell: powershell
 
-      - name: Sign Sheetswiper installer
-        uses: sillsdev/codesign/trusted-signing-action@v3
-        with:
-          credentials: ${{ secrets.TRUSTED_SIGNING_CREDENTIALS }}
-          files: ${{env.PUBLISH_PATH}}\win-x64\publish\SheetSwiper.exe
-
       - name: Rename exe file with version and architecture
         env:
           PUBLISH_PATH: 'src\bin\Release\net8.0-windows'
         run: |
           mv ${{env.PUBLISH_PATH}}\win-x64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-x64.exe
 #          mv ${{env.PUBLISH_PATH}}\win-arm64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-arm64.exe
+
+      - name: Sign Sheetswiper installer
+        uses: sillsdev/codesign/trusted-signing-action@v3
+        with:
+          credentials: ${{ secrets.TRUSTED_SIGNING_CREDENTIALS }}
+          files-folder: .
+          files-folder-filter: SheetSwiper-*.exe
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
