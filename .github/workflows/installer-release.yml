@@ -49,34 +49,14 @@ jobs:
           PUBLISH_PATH: 'src\bin\Release\net8.0-windows'
         run: |
           mv ${{env.PUBLISH_PATH}}\win-x64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-x64.exe
-
-
 #          mv ${{env.PUBLISH_PATH}}\win-arm64\publish\SheetSwiper.exe SheetSwiper-v${{ env.VERSION }}-arm64.exe
 
-      - uses: actions/upload-artifact@v4
+      - name: Sign Sheetswiper installer
+        uses: sillsdev/codesign/trusted-signing-action@v3
         with:
-          name: SheetSwiper
-          path: SheetSwiper-*.exe
-          if-no-files-found: error
-
-  sign-installer:
-    name: Sign Sheetswiper installer
-    needs: build-installer
-    uses: sillsdev/codesign/.github/workflows/sign.yml@v2
-    with:
-      artifact: SheetSwiper
-    secrets:
-      certificate: ${{ secrets.CODESIGN_LSDEVSECTIGOEV }}
-
-  create-release:
-    name: Create Release
-    needs: sign-installer
-    runs-on: windows-latest
-
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: SheetSwiper
+          credentials: ${{ secrets.TRUSTED_SIGNING_CREDENTIALS }}
+          files-folder: .
+          files-folder-filter: SheetSwiper-*.exe
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
